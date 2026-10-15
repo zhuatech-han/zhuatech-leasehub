@@ -1,0 +1,13 @@
+LeaseHub 1.0.0
+Copyright 2026 上海如静知华信息科技有限公司
+https://www.zhuatech.cn/ · 商业咨询微信 zhuatech / zhuatech2
+
+自有代码按根目录 LICENSE 提供非商业学习许可。构建、安全配置和品牌原图复用知华自有 PetStay；总部设备投放、合作商租赁、双方交接、收款核销、成本与分成结算、风险跟进业务独立实现。
+
+Vue / Vite / plugin-vue / ESLint / globals / Prettier: retain distributed MIT notices.
+Spring Boot / Spring Security / Spring JDBC / Flyway: retain distributed Apache-2.0 notices.
+MySQL Connector/J: retain GPL-2.0 and Universal FOSS Exception notices shipped with the connector.
+H2 test dependency: retain distributed MPL-2.0/EPL-1.0 notices.
+Docker images (Maven, Eclipse Temurin, Node, Nginx, MySQL) retain their distributed third-party notices.
+
+This attribution index does not replace dependency licenses or grant commercial permission for the application's own code. Review all distribution notices before redistribution.
