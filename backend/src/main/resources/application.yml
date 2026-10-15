@@ -1,0 +1,32 @@
+# Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ · 微信 zhuatech / zhuatech2
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:mysql://mysql:3306/zhuatech_leasehub?connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true&allowLoadLocalInfile=false&sslMode=REQUIRED}
+    username: ${DATABASE_USER:leasehub}
+    password: ${DATABASE_PASSWORD}
+    hikari:
+      transaction-isolation: TRANSACTION_READ_COMMITTED
+  flyway:
+    enabled: true
+  jackson:
+    deserialization:
+      accept-float-as-int: false
+server:
+  servlet:
+    session:
+      timeout: 30m
+      cookie:
+        name: LEASEHUB_SESSION
+        http-only: true
+        same-site: strict
+        secure: ${COOKIE_SECURE:false}
+  error:
+    include-message: never
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+leasehub:
+  admin-username: ${ADMIN_USERNAME:admin}
+  admin-password: ${ADMIN_PASSWORD}
